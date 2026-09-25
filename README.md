@@ -7,7 +7,7 @@
 
 | Subject | Project | Description | Link |
 |---------|---------|-------------|------|
-| Web System and tecnology | School project | HTML/CSS/JS landing page | [View](http://127.0.0.1:5500/Lecture.html) |
+| Web System and tecnology | School project | HTML/CSS/ | [View](http://127.0.0.1:5500/Lecture.html) |
 
 ## 🛠️ Languages & Tools I've Used
 Python • Java • HTML/CSS • JavaScript • MySQL • Git
