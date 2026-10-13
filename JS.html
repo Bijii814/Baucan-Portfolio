@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+
+    <p id="elementName"> Hello</p>
+    <p id="title">Hello World</p>
+    <button onclick="changeColor()"> Change Color</button>
+    <p id="message">Original text</p>
+    <button onclick="updateText()">Update</button>
+    <input type="email" 
+            id="email"
+            placeholder="email here">
+    <button onclick="updatePlaceholder()">Change PlaceHolder</button>
+
+    
+
+
+    <script>
+        const t=document.getElementById(title)
+        
+        function changeColor() {
+            document.getElementById("title").style.color = "blue";
+        }
+
+        function updateText(){
+            document.getElementById("message").textContent="Text changed using JavaScript!";
+        }
+
+        function updatePlaceholder(){
+            documen.getElementById("email").setAttribute("placeholder", "Enter Valid email");
+        }
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
