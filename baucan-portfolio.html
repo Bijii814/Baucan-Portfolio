@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B-J Baucan — 3rd year BS Information Technology student. Portfolio of web development projects, skills and contact details.">
+    <meta name="author" content="B-J Baucan">
+    <title>Baucan Portfolio — B-J BAUCAN</title>
+    <link rel="stylesheet" href="CSS/baucan-portfolio.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="#home" class="logo">B-J<span>BAUCAN</span></a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">🏠 Home</a></li>
+                <li><a href="#about" class="nav-link">❗ About</a></li>
+                <li><a href="#skills" class="nav-link">🛠️ Skills</a></li>
+                <li><a href="#projects" class="nav-link">📁 Projects</a></li>
+                <li><a href="#contact" class="nav-link">✉️ Contact</a></li>
+                <li><a href="Project.html" class="nav-link nav-link--outline">🎁 Product</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ================= HERO / HOME ================= -->
+        <section class="hero" id="home">
+            <h1 class="hero-wordmark" aria-hidden="true">BAUCAN</h1>
+
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow">Hi, my name is</p>
+                    <h2 class="hero-name">B-J BAUCAN</h2>
+                    <p class="hero-title">Bachelor of Science in Information Technology</p>
+                    <p class="hero-blurb">
+                        3rd year IT student who loves coding, solving problems, and learning new things.
+                        This is my shelf of school projects built with HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn--solid">View My Projects</a>
+                        <a href="#contact" class="btn btn--ghost">Contact Me</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">f</a>
+                        <a href="https://github.com/Bijii814/Baucan-Portfolio" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">⌘</a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="hero-photo">
+                    <div class="profile-image">
+                        <img src="image/IMG_20260810_175412.jpg" alt="B-J Baucan profile picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section about-section" id="about">
+            <div class="section-title">
+                <span class="section-icon">❗</span>
+                ABOUT ME
+            </div>
+
+            <div class="about-grid">
+                <div class="about-me">
+                    <h4>About Me</h4>
+                    <p>
+                        I am a 3rd year Information Technology student who loves coding, solving problems,
+                        and learning new things. When I'm not studying, I enjoy playing games, listening to
+                        music, and exploring new technology.
+                    </p>
+                </div>
+
+                <ul class="fact-list">
+                    <li>
+                        <span class="fact-key">🎓 Course</span>
+                        <span class="fact-value">BS Information Technology — 3rd Year</span>
+                    </li>
+                    <li>
+                        <span class="fact-key">🏫 School</span>
+                        <span class="fact-value">Mountain Province State University</span>
+                    </li>
+                    <li>
+                        <span class="fact-key">📚 Subject</span>
+                        <span class="fact-value">Web Systems and Technologies</span>
+                    </li>
+                    <li>
+                        <span class="fact-key">📍 Based in</span>
+                        <span class="fact-value">Bontoc, Mountain Province, Philippines</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section skills-section" id="skills">
+            <div class="section-title">
+                <span class="section-icon">🛠️</span>
+                LANGUAGES &amp; TOOLS
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><i style="--level:90%"></i></div></div>
+                <div class="skill-card"><span class="skill-name">JavaScript</span><div class="skill-bar"><i style="--level:75%"></i></div></div>
+                <div class="skill-card"><span class="skill-name">Python</span><div class="skill-bar"><i style="--level:70%"></i></div></div>
+                <div class="skill-card"><span class="skill-name">Java</span><div class="skill-bar"><i style="--level:65%"></i></div></div>
+                <div class="skill-card"><span class="skill-name">MySQL</span><div class="skill-bar"><i style="--level:60%"></i></div></div>
+                <div class="skill-card"><span class="skill-name">Git</span><div class="skill-bar"><i style="--level:70%"></i></div></div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="section projects-section" id="projects">
+            <div class="section-title">
+                <span class="section-icon">📁</span>
+                PROJECTS
+            </div>
+
+            <div class="filter-bar" id="filterBar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="HTML5 / CSS3">HTML / CSS</button>
+                <button class="filter-btn" data-filter="CSS FLEXBOX">Flexbox</button>
+                <button class="filter-btn" data-filter="JS">JavaScript</button>
+                <button class="filter-btn" data-filter="HTML / FORM">Forms</button>
+            </div>
+
+            <div class="shelf-cabinet" id="shelfCabinet">
+
+                <a href="index.html" class="shelf-item" data-tag="HTML5 / CSS3">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">📊</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">CSS Grid Laboratory</h3>
+                                <p class="shelf-desc">A layout activity using CSS Grid with repeat(), a three column layout and gap spacing.</p>
+                            </div>
+                            <span class="shelf-tag">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Flexbox.html" class="shelf-item" data-tag="CSS FLEXBOX">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">🧩</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Flexbox Navigation Bar</h3>
+                                <p class="shelf-desc">A navigation bar built with Flexbox, using space-between alignment and a rounded profile image.</p>
+                            </div>
+                            <span class="shelf-tag">CSS FLEXBOX</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Vibrant.html" class="shelf-item" data-tag="HTML5 / CSS3">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">🎨</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Vibrant Text Effect</h3>
+                                <p class="shelf-desc">Outlined headline text created with -webkit-text-stroke.</p>
+                            </div>
+                            <span class="shelf-tag">-webkit-text-stroke</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Profile-Card.html" class="shelf-item" data-tag="CSS FLEXBOX">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">👥</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Profile Card Grid</h3>
+                                <p class="shelf-desc">A set of six member cards using Flexbox, rounded corners and circular profile pictures.</p>
+                            </div>
+                            <span class="shelf-tag">FLEXBOX + ROUNDED CARDS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Lecture.html" class="shelf-item" data-tag="CSS FLEXBOX">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">🎓</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Team Profile Cards</h3>
+                                <p class="shelf-desc">Three team member cards laid out with Flexbox and spaced apart using the gap property.</p>
+                            </div>
+                            <span class="shelf-tag">FLEXBOX + GAP</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="JS.html" class="shelf-item" data-tag="JS">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">⚡</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">JavaScript Interactive Demo</h3>
+                                <p class="shelf-desc">A JavaScript project with interactive buttons that change text, color, and placeholders dynamically.</p>
+                            </div>
+                            <span class="shelf-tag">JS</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="EGISTRATION FORM.html" class="shelf-item" data-tag="HTML / FORM">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">📝</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Registration Form</h3>
+                                <p class="shelf-desc">A user registration form with input fields, validation, and file upload.</p>
+                            </div>
+                            <span class="shelf-tag">HTML / FORM</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="login.html" class="shelf-item" data-tag="HTML / FORM">
+                    <div class="shelf-board">
+                        <div class="shelf-content">
+                            <span class="shelf-icon">🔐</span>
+                            <div class="shelf-text">
+                                <h3 class="shelf-title">Login Page</h3>
+                                <p class="shelf-desc">A login form with username, email, password fields and a remember me option.</p>
+                            </div>
+                            <span class="shelf-tag">HTML / FORM</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="shelf-empty" id="shelfEmpty" hidden>No projects under this filter yet.</p>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section contact-section" id="contact">
+            <div class="section-title">
+                <span class="section-icon">✉️</span>
+                CONTACT
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:Bjaybaucan14@gmail.com">Bjaybaucan14@gmail.com</a></p>
+                            <button class="copy-btn" type="button" id="copyEmail" data-email="Bjaybaucan14@gmail.com">Copy email</button>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+639123456789">+63 912 345 6789</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Bontoc, Mountain Province, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <h4>Send me a message</h4>
+
+                    <label for="cfName">Name</label>
+                    <input type="text" id="cfName" name="name" placeholder="Your name" required>
+
+                    <label for="cfEmail">Email</label>
+                    <input type="email" id="cfEmail" name="email" placeholder="you@example.com" required>
+
+                    <label for="cfMessage">Message</label>
+                    <textarea id="cfMessage" name="message" rows="4" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="btn btn--solid btn--full">Send Message</button>
+                    <p class="form-note" id="formNote" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © August 17, 2026 | IT Student Portfolio
+    </footer>
+
+    <script src="JS/baucan-portfolio.js"></script>
+</body>
+</html>
