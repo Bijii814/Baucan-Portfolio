@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.Login-Container{
+    border: 5px solid blue;
+    margin: 20px 20px;
+    padding: 50px 50px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Login-Title{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    
+}
+
+span{
+    color: aqua;
+    margin-bottom: 20px;
+}
