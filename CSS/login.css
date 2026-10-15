@@ -1,26 +1,132 @@
-body{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.Login-Container{
-    border: 5px solid blue;
-    margin: 20px 20px;
-    padding: 50px 50px;
-    background-color: green;
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Login wrapper centers the card */
+.login-wrapper {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* Login card styling - simple student-style with borders */
+.login-card {
+    background-color: #fff;
+    border: 3px solid #0000FF;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 2px 2px 0px #888;
+}
+
+/* Login heading */
+.login-heading {
+    text-align: center;
+    color: #0000FF;
+    margin-bottom: 25px;
+    font-size: 28px;
+    border-bottom: 2px dashed #0000FF;
+    padding-bottom: 10px;
+}
+
+/* Form group - label + input */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #0000FF;
+    border-radius: 4px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #000088;
+}
+
+/* Remember me + forgot password row */
+.form-options {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-
-}
-.Login-Title{
-    border: 2px solid yellow;
-    border-radius: 10px;
-    
+    margin: 10px 0 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-span{
-    color: aqua;
-    margin-bottom: 20px;
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.forgot-link {
+    color: #0000FF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0000FF;
+    color: #fff;
+    border: 2px solid #000088;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #0000cc;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-card {
+        padding: 20px 15px;
+        border-width: 2px;
+    }
+    .login-heading {
+        font-size: 22px;
+    }
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

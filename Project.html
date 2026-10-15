@@ -4,86 +4,381 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - B-J BAUCAN</title>
-    <link rel="stylesheet" href="css/Project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Index_style.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/Vibrant.css">
+    <link rel="stylesheet" href="css/lec.css">
+    <link rel="stylesheet" href="css/Profile-Card.Css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        .project-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 20px;
+            justify-content: center;
+            background: #0a0a0a;
+            border-bottom: 3px solid #00ff00;
+        }
+        .project-tabs a {
+            text-decoration: none;
+            color: #00ffff;
+            font-weight: bold;
+            padding: 8px 18px;
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .project-tabs a:hover {
+            background: #00ffff;
+            color: #000;
+        }
+        .project-section {
+            padding: 30px 20px;
+            border-bottom: 3px solid #00ff00;
+            background: #0a0a0a;
+        }
+        .project-section h2 {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .back-top {
+            display: block;
+            text-align: center;
+            color: #00ffff;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .back-top:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">B-J BAUCAN</div>
-        <ul class="nav-links">
-            <li><a href="My_Portfolio.html">Home</a></li>
-            <li><a href="Project.html" class="active">Projects</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="My_Portfolio.html">
+                <img src="image/IMG_20260810_175412.jpg" alt="Profile" width="36" height="36" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="My_Portfolio.html">🏠 Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Project.html">📁 Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login-project">🔐 Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="My_Portfolio.html">← Back</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section class="projects-hero">
-        <h1>My Projects</h1>
-        <p>A collection of web development projects and exercises</p>
+    <div class="project-tabs">
+        <a href="#css-grid">CSS Grid</a>
+        <a href="#flexbox-nav">Flexbox Nav</a>
+        <a href="#vibrant-text">Vibrant Text</a>
+        <a href="#profile-card">Profile Cards</a>
+        <a href="#team-cards">Team Cards</a>
+        <a href="#js-demo">JS Demo</a>
+        <a href="#registration-form">Registration</a>
+        <a href="#login-project">Login</a>
+    </div>
+
+    <!-- ============ Project 1: CSS Grid Laboratory ============ -->
+    <section class="project-section" id="css-grid">
+        <h2>CSS Grid Laboratory</h2>
+        <h1 style="text-align:center;color:navy;">CSS Grid Laboratory Activity</h1>
+        <section class="Container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+            <div class="item item6">6</div>
+        </section>
+        <a href="#css-grid" class="back-top">↑ Back to top</a>
     </section>
 
-    <section class="projects-grid">
-        <a href="index.html" class="project-card">
-            <div class="project-icon">📊</div>
-            <h3>CSS Grid Laboratory</h3>
-            <p>A layout activity using CSS Grid with repeat(), three column layout and gap spacing.</p>
-            <span class="project-tag">HTML5 / CSS3</span>
-        </a>
-
-        <a href="Flexbox.html" class="project-card">
-            <div class="project-icon">🧩</div>
-            <h3>Flexbox Navigation Bar</h3>
-            <p>A navigation bar built with Flexbox, using space-between alignment and a rounded profile image.</p>
-            <span class="project-tag">CSS FLEXBOX</span>
-        </a>
-
-        <a href="Vibrant.html" class="project-card">
-            <div class="project-icon">🎨</div>
-            <h3>Vibrant Text Effect</h3>
-            <p>Outlined headline text created with -webkit-text-stroke and animated gradient.</p>
-            <span class="project-tag">CSS -webkit-text-stroke</span>
-        </a>
-
-        <a href="Profile-Card.html" class="project-card">
-            <div class="project-icon">👥</div>
-            <h3>Profile Card Grid</h3>
-            <p>A set of six member cards using Flexbox, rounded corners and circular profile pictures.</p>
-            <span class="project-tag">FLEXBOX + ROUNDED CARDS</span>
-        </a>
-
-        <a href="Lecture.html" class="project-card">
-            <div class="project-icon">🎓</div>
-            <h3>Team Profile Cards</h3>
-            <p>Three team member cards laid out with Flexbox and spaced apart using the gap property.</p>
-            <span class="project-tag">FLEXBOX + GAP</span>
-        </a>
-
-        <a href="JS.html" class="project-card">
-            <div class="project-icon">⚡</div>
-            <h3>JavaScript Interactive Demo</h3>
-            <p>A JavaScript project with interactive buttons that change text, color, and placeholders dynamically.</p>
-            <span class="project-tag">JS</span>
-        </a>
-
-        <a href="EGISTRATION FORM.html" class="project-card">
-            <div class="project-icon">📝</div>
-            <h3>Registration Form</h3>
-            <p>A user registration form with input fields, validation, and file upload.</p>
-            <span class="project-tag">HTML / FORM</span>
-        </a>
-
-        <a href="login.html" class="project-card">
-            <div class="project-icon">🔐</div>
-            <h3>Login Page</h3>
-            <p>A login form with username, email, password fields and remember me option.</p>
-            <span class="project-tag">HTML / FORM</span>
-        </a>
+    <!-- ============ Project 2: Flexbox Navigation Bar ============ -->
+    <section class="project-section" id="flexbox-nav">
+        <h2>Flexbox Navigation Bar</h2>
+        <nav class="navbar">
+            <div class="profile_img">
+                <img src="image/cup-drink-near-grains-table.jpg" alt="" srcset="">
+                <span>Profile name</span>
+            </div>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact us</a>
+                <a href="#">Product</a>
+            </div>
+        </nav>
+        <a href="#flexbox-nav" class="back-top">↑ Back to top</a>
     </section>
 
+    <!-- ============ Project 3: Vibrant Text Effect ============ -->
+    <section class="project-section" id="vibrant-text">
+        <h2>Vibrant Text Effect</h2>
+        <div class="text">VIBRANT</div>
+        <a href="#vibrant-text" class="back-top">↑ Back to top</a>
+    </section>
 
-    <footer>
-        © August 17, 2026 | IT Student Portfolio
-    </footer>
+    <!-- ============ Project 4: Profile Card Grid ============ -->
+    <section class="project-section" id="profile-card">
+        <h2>Profile Card Grid</h2>
+        <h1 style="text-align:center;color:yellow;">My Profile Card Grid</h1>
+        <div class="profile-grid">
+            <div class="card">
+                <img src="Image/1.jpg" alt="Ana Santos">
+                <h2>Ana Santos</h2>
+                <p>Web developer who enjoys creating responsive websites.</p>
+                <p>ana.santos@example.com</p>
+            </div>
+            <div class="card">
+                <img src="Image/2.jpg" alt="Mark Reyes">
+                <h2>Mark Reyes</h2>
+                <p>Future IT professional interested in frontend development.</p>
+                <p>mark.reyes@example.com</p>
+            </div>
+            <div class="card">
+                <img src="Image/3.jpg" alt="Jessa Cruz">
+                <h2>Jessa Cruz</h2>
+                <p>Student designer who enjoys HTML, CSS, and layouts.</p>
+                <p>jessa.cruz@example.com</p>
+            </div>
+            <div class="card">
+                <img src="Image/4.jpg" alt="Carl Dizon">
+                <h2>Carl Dizon</h2>
+                <p>Programmer focused on creating user-friendly applications.</p>
+                <p>carl.dizon@example.com</p>
+            </div>
+            <div class="card">
+                <img src="Image/5.jpg" alt="Mika Tan">
+                <h2>Mika Tan</h2>
+                <p>Creative learner exploring web design and coding.</p>
+                <p>mika.tan@example.com</p>
+            </div>
+            <div class="card">
+                <img src="Image/6.jpg" alt="John Lim">
+                <h2>John Lim</h2>
+                <p>Technology enthusiast practicing Grid and Flexbox.</p>
+                <p>Jo.Lim@exampl.com</p>
+            </div>
+        </div>
+        <a href="#profile-card" class="back-top">↑ Back to top</a>
+    </section>
 
+    <!-- ============ Project 5: Team Profile Cards ============ -->
+    <section class="project-section" id="team-cards">
+        <h2>Team Profile Cards</h2>
+        <section class="Profile_Card">
+            <div class="Team_1">
+                <img src="image/1.jpg" alt="" srcset="">
+                <h3>justine  </h3>
+                <p>web designer</p>
+                <p>jo@Gmail.com</p>
+            </div>
+            <div class="Team_2">
+                <img src="image/2.jpg" alt="" srcset="">
+                <h3>biano   </h3>
+                <p>student</p>
+                <p>biano@gmail.com</p>
+            </div>
+            <div class="Team_3">
+                <img src="image/3.jpg" alt="" srcset="">
+                <h3>matt  </h3>
+                <p>student</p>
+                <p>matt@gmail.com</p>
+            </div>
+        </section>
+        <a href="#team-cards" class="back-top">↑ Back to top</a>
+    </section>
+
+    <!-- ============ Project 6: JavaScript Interactive Demo ============ -->
+    <section class="project-section" id="js-demo">
+        <h2>JavaScript Interactive Demo</h2>
+        <p id="elementName"> Hello</p>
+        <p id="title">Hello World</p>
+        <button onclick="changeColor()"> Change Color</button>
+        <p id="message">Original text</p>
+        <button onclick="updateText()">Update</button>
+        <input type="email" id="email" placeholder="email here">
+        <button onclick="updatePlaceholder()">Change PlaceHolder</button>
+        <a href="#js-demo" class="back-top">↑ Back to top</a>
+    </section>
+
+    <!-- ============ Project 7: Registration Form ============ -->
+    <section class="project-section" id="registration-form">
+        <h2>Registration Form</h2>
+        <form action="submit" class="registration-form form-grid" method="post">
+            <h3 class="form-title" style="text-align:center;color:#0000FF;">User Registration Form</h3>
+            <div class="form-row">
+                <label for="firstname" class="form-label">Firstname:</label>
+                <input type="text" placeholder="Your Firstname" id="firstname" name="firstname" class="form-input form-input--required">
+            </div>
+            <div class="form-row">
+                <label for="lastname" class="form-label">Lastname:</label>
+                <input type="text" placeholder="Your Lastname" id="lastname" name="lastname" class="form-input form-input--required">
+            </div>
+            <div class="form-row">
+                <label for="DOB" class="form-label">Date of Birth:</label>
+                <input type="date" name="DOB" id="DOB" class="form-input form-input--date">
+            </div>
+            <fieldset class="form-fieldset form-fieldset--gender">
+                <legend class="form-legend">Gender:</legend>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="male" value="male" class="radio-input">
+                    <label for="male" class="radio-label">Male</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="female" value="female" class="radio-input">
+                    <label for="female" class="radio-label">Female</label>
+                </div>
+            </fieldset>
+            <div class="form-section">
+                <h4 class="form-section-title">Address:</h4>
+                <div class="form-row">
+                    <label for="barangay" class="form-label">Barangay:</label>
+                    <input type="text" placeholder="Your Barangay" id="barangay" name="barangay" class="form-input">
+                </div>
+                <div class="form-row">
+                    <label for="municipality" class="form-label">Municipality:</label>
+                    <input type="text" placeholder="Your Municipality" id="municipality" name="municipality" class="form-input">
+                </div>
+                <div class="form-row">
+                    <label for="province" class="form-label">Province:</label>
+                    <input type="text" placeholder="Your Province" id="province" name="province" class="form-input">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="country" class="form-label">Country:</label>
+                <select name="country" id="country" class="form-select">
+                    <option value="">Select country</option>
+                    <option value="arg">Argentina</option>
+                    <option value="canada">Canada</option>
+                    <option value="ph">Philippines</option>
+                    <option value="US">United States</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="mobile" class="form-label">Mobile Number:</label>
+                <input type="tel" placeholder="Type your mobile number" id="mobile" name="mobile" class="form-input form-input--tel">
+            </div>
+            <div class="form-row">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" placeholder="Your personal email address" id="email" name="email" class="form-input form-input--required form-input--email">
+            </div>
+            <fieldset class="form-fieldset form-fieldset--interests">
+                <legend class="form-legend">Interests:</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" value="coding" name="interests" id="coding" class="checkbox-input">
+                    <label for="coding" class="checkbox-label">Coding</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" value="layout" name="interests" id="layout" class="checkbox-input">
+                    <label for="layout" class="checkbox-label">Layout</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" value="video-editing" name="interests" id="vediting" class="checkbox-input">
+                    <label for="vediting" class="checkbox-label">Video Editing</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" value="cycling" name="interests" id="cycling" class="checkbox-input">
+                    <label for="cycling" class="checkbox-label">Cycling</label>
+                </div>
+            </fieldset>
+            <hr class="form-divider">
+            <div class="form-section">
+                <h4 class="form-section-title">Parent/Guardian Information</h4>
+                <div class="form-row">
+                    <label for="fname" class="form-label">Father's Fullname:</label>
+                    <input type="text" placeholder="Father's Name" id="fname" name="fname" class="form-input">
+                </div>
+                <div class="form-row">
+                    <label for="foccupation" class="form-label">Father's Occupation:</label>
+                    <input type="text" placeholder="Father's Occupation" id="foccupation" name="foccupation" class="form-input">
+                </div>
+                <div class="form-row">
+                    <label for="mname" class="form-label">Mother's Fullname:</label>
+                    <input type="text" placeholder="Mother's Name" id="mname" name="mname" class="form-input">
+                </div>
+                <div class="form-row">
+                    <label for="moccupation" class="form-label">Mother's Occupation:</label>
+                    <input type="text" placeholder="Mother's Occupation" id="moccupation" name="moccupation" class="form-input">
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="Resume" class="form-label">Upload Resume:</label>
+                <input type="file" id="Resume" name="Resume" class="form-input form-input--file" accept=".pdf,.doc,.docx">
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn--download">
+                    <a href="images/1.jpg" class="download-link" download="sample-resume">Click to download</a>
+                </button>
+                <button type="submit" class="btn btn--submit">Submit</button>
+                <button type="reset" class="btn btn--reset">Reset</button>
+            </div>
+        </form>
+        <a href="#registration-form" class="back-top">↑ Back to top</a>
+    </section>
+
+    <!-- ============ Project 8: Login ============ -->
+    <section class="project-section" id="login-project">
+        <h2>Login</h2>
+        <div class="login-wrapper">
+            <div class="login-card">
+                <h2 class="login-heading">LOGIN</h2>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
+        <a href="#login-project" class="back-top">↑ Back to top</a>
+    </section>
+
+    <script>
+        function changeColor() {
+            document.getElementById("title").style.color = "blue";
+        }
+        function updateText(){
+            document.getElementById("message").textContent="Text changed using JavaScript!";
+        }
+        function updatePlaceholder(){
+            document.getElementById("email").setAttribute("placeholder", "Enter Valid email");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
